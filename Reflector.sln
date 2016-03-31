@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.API", "Reflector.API\Reflector.API.csproj", "{F3A08613-982D-483A-B2E2-468251F1A73C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Services", "Reflector.Services\Reflector.Services.csproj", "{15818DE4-4DF7-4B93-AD8A-2D7CCC6787C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Client", "Reflector.Client\Reflector.Client.csproj", "{67A2B3BE-F89E-4658-8468-2653C45E9625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Client.Services", "Reflector.Client.Services\Reflector.Client.Services.csproj", "{887872E2-4561-4142-994A-F9D5F3D41DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Client.Tests", "Reflector.Client.Tests\Reflector.Client.Tests.csproj", "{431711B6-60D4-40A3-8538-C8D658EE3C9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Reporter", "Reflector.Reporter\Reflector.Reporter.csproj", "{52190AFE-A612-4C84-8CEE-CEF24969EA89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflector.Services.Tests", "Reflector.Services.Tests\Reflector.Services.Tests.csproj", "{7CDC0FE6-9C24-4876-8162-573EA35C97C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3A08613-982D-483A-B2E2-468251F1A73C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A08613-982D-483A-B2E2-468251F1A73C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A08613-982D-483A-B2E2-468251F1A73C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A08613-982D-483A-B2E2-468251F1A73C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15818DE4-4DF7-4B93-AD8A-2D7CCC6787C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15818DE4-4DF7-4B93-AD8A-2D7CCC6787C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15818DE4-4DF7-4B93-AD8A-2D7CCC6787C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15818DE4-4DF7-4B93-AD8A-2D7CCC6787C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A2B3BE-F89E-4658-8468-2653C45E9625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A2B3BE-F89E-4658-8468-2653C45E9625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A2B3BE-F89E-4658-8468-2653C45E9625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A2B3BE-F89E-4658-8468-2653C45E9625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887872E2-4561-4142-994A-F9D5F3D41DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887872E2-4561-4142-994A-F9D5F3D41DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887872E2-4561-4142-994A-F9D5F3D41DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887872E2-4561-4142-994A-F9D5F3D41DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431711B6-60D4-40A3-8538-C8D658EE3C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431711B6-60D4-40A3-8538-C8D658EE3C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431711B6-60D4-40A3-8538-C8D658EE3C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431711B6-60D4-40A3-8538-C8D658EE3C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52190AFE-A612-4C84-8CEE-CEF24969EA89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52190AFE-A612-4C84-8CEE-CEF24969EA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52190AFE-A612-4C84-8CEE-CEF24969EA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52190AFE-A612-4C84-8CEE-CEF24969EA89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDC0FE6-9C24-4876-8162-573EA35C97C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDC0FE6-9C24-4876-8162-573EA35C97C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDC0FE6-9C24-4876-8162-573EA35C97C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDC0FE6-9C24-4876-8162-573EA35C97C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://smllcus.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Reflector.API\\Reflector.API.csproj
+		SccProjectName1 = Reflector.API
+		SccLocalPath1 = Reflector.API
+		SccProjectUniqueName2 = Reflector.Services\\Reflector.Services.csproj
+		SccProjectName2 = Reflector.Services
+		SccLocalPath2 = Reflector.Services
+		SccProjectUniqueName3 = Reflector.Client\\Reflector.Client.csproj
+		SccProjectName3 = Reflector.Client
+		SccLocalPath3 = Reflector.Client
+		SccProjectUniqueName4 = Reflector.Client.Services\\Reflector.Client.Services.csproj
+		SccProjectName4 = Reflector.Client.Services
+		SccLocalPath4 = Reflector.Client.Services
+		SccProjectUniqueName5 = Reflector.Client.Tests\\Reflector.Client.Tests.csproj
+		SccProjectName5 = Reflector.Client.Tests
+		SccLocalPath5 = Reflector.Client.Tests
+		SccProjectUniqueName6 = Reflector.Reporter\\Reflector.Reporter.csproj
+		SccProjectName6 = Reflector.Reporter
+		SccLocalPath6 = Reflector.Reporter
+		SccProjectUniqueName7 = Reflector.Services.Tests\\Reflector.Services.Tests.csproj
+		SccProjectName7 = Reflector.Services.Tests
+		SccLocalPath7 = Reflector.Services.Tests
+	EndGlobalSection
+EndGlobal

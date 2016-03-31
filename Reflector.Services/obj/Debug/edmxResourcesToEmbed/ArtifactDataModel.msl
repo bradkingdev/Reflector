@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ArtifactDataStoreModelStoreContainer" CdmEntityContainer="ArtifactDataContext">
+    <EntitySetMapping Name="Artifacts">
+      <EntityTypeMapping TypeName="ArtifactDataStoreModel.Artifact">
+        <MappingFragment StoreEntitySet="Artifact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ArtifactHeaderId" ColumnName="ArtifactHeaderId" />
+          <ScalarProperty Name="Classification" ColumnName="Classification" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="Fact" ColumnName="Fact" />
+          <ScalarProperty Name="DateTimeLogged" ColumnName="DateTimeLogged" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtifactHeaders">
+      <EntityTypeMapping TypeName="ArtifactDataStoreModel.ArtifactHeader">
+        <MappingFragment StoreEntitySet="ArtifactHeader">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

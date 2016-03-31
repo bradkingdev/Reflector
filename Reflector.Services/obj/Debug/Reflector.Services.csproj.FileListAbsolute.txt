@@ -1,0 +1,16 @@
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Reflector.Services.dll.config
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Reflector.Services.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Reflector.Services.pdb
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\EntityFramework.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\MediatR.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\WebActivatorEx.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\EntityFramework.xml
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\MediatR.xml
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\obj\Debug\Reflector.Services.dll
+C:\NewDevelopment\Windows Applications\Trunk\WebApps\Reflector\Reflector.Services\obj\Debug\Reflector.Services.pdb

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ArtifactDataStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Artifact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ArtifactHeaderId" Type="int" Nullable="false" />
+    <Property Name="Classification" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Label" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Fact" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateTimeLogged" Type="datetimeoffset" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArtifactHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ArtifactsCustomerID_FK_Customers_ID">
+    <End Role="ArtifactHeader" Type="Self.ArtifactHeader" Multiplicity="1" />
+    <End Role="Artifact" Type="Self.Artifact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArtifactHeader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Artifact">
+        <PropertyRef Name="ArtifactHeaderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ArtifactDataStoreModelStoreContainer">
+    <EntitySet Name="Artifact" EntityType="Self.Artifact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ArtifactHeader" EntityType="Self.ArtifactHeader" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ArtifactsCustomerID_FK_Customers_ID" Association="Self.FK_ArtifactsCustomerID_FK_Customers_ID">
+      <End Role="ArtifactHeader" EntitySet="ArtifactHeader" />
+      <End Role="Artifact" EntitySet="Artifact" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

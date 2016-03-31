@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ArtifactDataStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Artifact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArtifactHeaderId" Type="Int32" Nullable="false" />
+    <Property Name="Classification" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Label" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fact" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateTimeLogged" Type="DateTimeOffset" Nullable="false" Precision="7" />
+    <NavigationProperty Name="ArtifactHeader" Relationship="Self.FK_ArtifactsCustomerID_FK_Customers_ID" FromRole="Artifact" ToRole="ArtifactHeader" />
+  </EntityType>
+  <EntityType Name="ArtifactHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Artifacts" Relationship="Self.FK_ArtifactsCustomerID_FK_Customers_ID" FromRole="ArtifactHeader" ToRole="Artifact" />
+  </EntityType>
+  <Association Name="FK_ArtifactsCustomerID_FK_Customers_ID">
+    <End Role="ArtifactHeader" Type="Self.ArtifactHeader" Multiplicity="1" />
+    <End Role="Artifact" Type="Self.Artifact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArtifactHeader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Artifact">
+        <PropertyRef Name="ArtifactHeaderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ArtifactDataContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Artifacts" EntityType="Self.Artifact" />
+    <EntitySet Name="ArtifactHeaders" EntityType="Self.ArtifactHeader" />
+    <AssociationSet Name="FK_ArtifactsCustomerID_FK_Customers_ID" Association="Self.FK_ArtifactsCustomerID_FK_Customers_ID">
+      <End Role="ArtifactHeader" EntitySet="ArtifactHeaders" />
+      <End Role="Artifact" EntitySet="Artifacts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
