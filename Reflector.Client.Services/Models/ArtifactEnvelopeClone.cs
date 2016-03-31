@@ -11,10 +11,10 @@ namespace Reflector.Client.Services.Models
     {
         public ArtifactEnvelope()
         {
-            this.CustomerName = "Customer not instantiated";
+            this.Label = "Entity not instantiated";
         }
-        public int CustomerNumber { get; set; }
-        public string CustomerName { get; set; }
+        public int Identifer { get; set; }
+        public string Label { get; set; }
         public IEnumerable<ReportableFact> Facts { get; set; }
     }
     /*classification, label, descriptor*/

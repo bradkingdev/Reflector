@@ -31,8 +31,8 @@ namespace Reflector.Client
         {
             return new ArtifactEnvelope
             {
-                CustomerName = "ConsoleAPP",
-                CustomerNumber = 999,
+                Label = "ConsoleAPP",
+                Identifer = 999,
                 Facts = new List<ReportableFact>
                 {
                     new ReportableFact

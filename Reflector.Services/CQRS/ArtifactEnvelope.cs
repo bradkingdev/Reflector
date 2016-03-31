@@ -12,7 +12,7 @@ namespace Reflector.Services.CQRS
     {
         public ArtifactEnvelope()
         {
-            this.Label = "Customer not instantiated";
+            this.Label = "Identifier not saturated.";
         }
         public int Identifier { get; set; }
         public string Label { get; set; }

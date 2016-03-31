@@ -30,8 +30,8 @@ namespace Reflector.Client.Tests
         {
             var artifactEnv = new ArtifactEnvelope
             {
-                CustomerName = "Brad",
-                CustomerNumber = 2
+                Label = "Brad",
+                Identifer = 2
             };
 
             var jsonSvc = new JsonDataSvc<ArtifactEnvelope>();

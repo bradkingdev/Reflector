@@ -19,10 +19,9 @@ namespace Reflector.Client.Services.Repositories
 
         public ArtifactEnvelope Get(Dictionary<string, string> args)
         {
-            var argDictionary = new Dictionary<string, string>();
             List<ArtifactEnvelope> artifacts = new List<ArtifactEnvelope>();
             var getSvc = new HttpGetSvc<ArtifactEnvelope>();
-            return getSvc.DoGetCall(_url, argDictionary);
+            return getSvc.DoGetCall(_url, args);
         }
     }
 
